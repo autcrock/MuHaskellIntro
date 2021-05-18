@@ -2,4 +2,4 @@
 stack build
 stack run
 
-query gRPC endpoint 
+query gRPC endpoint with bloom RPC
