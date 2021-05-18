@@ -6,7 +6,8 @@ package MuHaskellIntro;
 
 service Service {
     rpc SayHello (HelloRequest) returns (HelloReply) {}
+    rpc SayManyHellos (stream HelloRequest) returns (stream HelloReply) {}
 }
-  
+
 message HelloRequest { string name = 1; }
 message HelloReply { string message = 1; }
